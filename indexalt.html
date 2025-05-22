@@ -18,20 +18,7 @@
 <a href="#Buch5" id="b5">5</a>
 <a href="#Buch6" id="b6">6</a>
 </nav>
-<button class="klappe" id="b_spra"><span id="b_spra_text"></span></button>
-<div class="feld">
-<table class="mantra">
-<tr>
-<td>
-<button id="b_de" onclick="de_an_aus()">de</button>
-<button id="b_eng2" onclick="eng2_an_aus()" title="Long1862">Long1862</button>
-<button id="b_fra" onclick="fra_an_aus()" title="Hilaire 1876">Hil1876</button>
-<button id="b_eng3" onclick="eng3_an_aus()" title="Casaubon1634">Cas1634</button>
-<button id="b_ori" onclick="ori_an_aus()" title="Teubner1908">Teub1908</button>
-</td>
-</tr>
-</table>
-</div>
+
 
 </div>
 </header>
@@ -1591,17 +1578,6 @@ Bedenke bei all diesen Männern, dass sie schon lange tot und begraben sind. Gib
 </div>
 </section>
 </main>
- <div id="ziel"></div>
-
-
-<script>
-  fetch('index-multi.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('ziel').innerHTML = html;
-    });
-</script>
-
 <script src="script.js" type="text/JavaScript"></script>
 </body>
 </html>

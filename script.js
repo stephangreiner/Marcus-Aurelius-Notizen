@@ -6,8 +6,14 @@ window.onload = function() {
 };
 
 function initPage() {
-  verstecken([".eng2", ".fra", ".eng3", ".ori"]);
-  anzeigen([".de"]);
+  const allLangs = ['.de', '.eng2', '.eng3', '.fra', '.ori'];
+  const existingLangs = allLangs.filter(cls => document.querySelector(cls));
+  verstecken(allLangs);
+  if (existingLangs.includes('.de')) {
+    anzeigen(['.de']);
+  } else {
+    anzeigen([existingLangs[0]]);
+  }
 }
 
 function verstecken(selectors) {
